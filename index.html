@@ -3,19 +3,19 @@
         <title>书香高原红</title>
         <link rel="stylesheet" href="css/mdui.min.css">
         <script src="js/mdui.min.js"></script>
+        <script src="js/index.js"></script>
     </head>
-    <body class="mdui-theme-primary-red mdui-theme-accent-blue mdui-color-red-200">
+    <body class="mdui-theme-primary-red mdui-theme-accent-blue">
         <div class="mdui-container">
-            <p class="mdui-typo-display-4 mdui-text-center">书香高原红</p>
-            <img src="schoollogo.jpg" class="mdui-center" alt="校徽">
-            <img src="poster.jpg" class="mdui-center" alt="海报">
+            <img class="mdui-container" src="logo.jpg" alt="logo">
             <p class="mdui-typo-display-2 mdui-text-center">已捐赠图书：<span class="mdui-typo-display-3">XX</span>本！</p>
-            <div class="mdui-tab mdui-tab-centered mdui-color-red" mdui-tab>
+            <div class="mdui-tab mdui-tab-centered" mdui-tab>
                 <a href="#tab1" class="mdui-ripple">活动主页</a>
                 <a href="#tab2" class="mdui-ripple">社团介绍</a>
                 <a href="#tab3" class="mdui-ripple">捐赠书目</a>
             </div>
             <div id="tab1">
+                <img src="poster.jpg" class="mdui-container" alt="海报">
                 活动的介绍
             </div>
             <div id="tab2">
@@ -23,7 +23,7 @@
             </div>
             <div id="tab3">
                 <div class="mdui-table-fluid">
-                    <table class="mdui-table mdui-table-hoverable mdui-color-red-200">
+                    <table class="mdui-table mdui-table-hoverable">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -33,18 +33,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th>1</th>
-                                <th>书名</th>
-                                <th>捐赠者</th>
-                                <th>图书来源</th>
-                            </tr>
-                            <tr>
-                                <th>2</th>
-                                <th>书名</th>
-                                <th>捐赠者</th>
-                                <th>图书来源</th>
-                            </tr>
+                            <script>makeTable();</script>
                         </tbody>
                     </table>
                 </div>
