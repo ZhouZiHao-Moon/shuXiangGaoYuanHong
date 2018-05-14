@@ -26,3 +26,16 @@ function makeTable()
         },
     });
 }
+
+function books()
+{
+    $$.ajax({
+        method:"GET",
+        url:"./books",
+        async:false,
+        success:function(data)
+        {
+            document.write(data);
+        },
+    });
+}

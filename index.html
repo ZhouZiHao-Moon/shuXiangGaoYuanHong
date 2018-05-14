@@ -5,21 +5,26 @@
         <script src="js/mdui.min.js"></script>
         <script src="js/index.js"></script>
     </head>
-    <body class="mdui-theme-primary-red mdui-theme-accent-blue">
+    <body class="mdui-theme-primary-red mdui-theme-accent-blue mdui-typo">
         <div class="mdui-container">
             <img class="mdui-container" src="logo.jpg" alt="logo">
-            <p class="mdui-typo-display-2 mdui-text-center">已捐赠图书：<span class="mdui-typo-display-3">XX</span>本！</p>
+            <p class="mdui-typo-display-2 mdui-text-center">已捐赠图书：<span class="mdui-typo-display-3"><script>books();</script></span>本！</p>
             <div class="mdui-tab mdui-tab-centered" mdui-tab>
                 <a href="#tab1" class="mdui-ripple">活动主页</a>
                 <a href="#tab2" class="mdui-ripple">社团介绍</a>
                 <a href="#tab3" class="mdui-ripple">捐赠书目</a>
             </div>
+            <br />
             <div id="tab1">
                 <img src="poster.jpg" class="mdui-container" alt="海报">
-                活动的介绍
             </div>
             <div id="tab2">
-                社团的介绍
+                <p class="mdui-typo-display-1">极客共进交流会：</p>
+                <p>极客社是通中两个计算机编程社团之一。社团主打提供基于专业的校内服务，先后已为多个社团提供网页宣传制作服务，目前正在筹划制作
+                    南通中学的onlinejudge。社团常期举行活动，从基础教学到项目制作，为对计算机感兴趣的同学提供了进一步学习的机会和指导。此外，
+                    该社团的成员在全国信息学奥林匹克竞赛中也取得优异的成绩。现在，极客社和通中另一个计算机社团云平台在各个方面进行同步和联合，
+                    进一步提高了社员的能力。
+                </p>
             </div>
             <div id="tab3">
                 <div class="mdui-table-fluid">
@@ -38,8 +43,8 @@
                     </table>
                 </div>
             </div>
-            <p class="mdui-text-center">组织：南通中学青鸟志愿者社</p>
-            <p class="mdui-text-center">网页制作：南通中学极客共进交流会</p>
+            <br />
+            <p class="mdui-text-center mdui-text-color-grey">组织：南通中学青鸟志愿者社<br />网页制作：南通中学极客共进交流会</p>
         </div>
     </body>
 </html>
