@@ -6,11 +6,12 @@ function makeTable()
         method:"GET",
         url:"./donate",
         async:false,
+        dataType:"json",
+        contentType:"application/json",
         success:function(data)
         {
             var table = $$("#table");
-            var datas = data["data"];
-            for (dat of datas)
+            for (dat of data)
             {
                 var id = dat[0];
                 var book = dat[1];
