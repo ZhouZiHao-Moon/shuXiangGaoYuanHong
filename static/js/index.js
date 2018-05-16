@@ -7,12 +7,13 @@ function makeTable()
         url:"./donate",
         async:false,
         dataType:"json",
-        contentType:"application/json",
         success:function(data)
         {
             var table = $$("#table");
+            console.log(data);
             for (dat of data)
             {
+                console.log(dat);
                 var id = dat[0];
                 var book = dat[1];
                 var donater = dat[2];
